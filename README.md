@@ -1,0 +1,1 @@
+# elaqat-static
