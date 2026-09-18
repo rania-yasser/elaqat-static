@@ -1,6 +1,6 @@
 .dark-body {
 
-  background: #010514 !important;
+  background: #0f172a !important;
 
     &.dark-bg-2 {
     background: #18010d !important;
@@ -20,6 +20,10 @@
 }
 .dark-body .page-wrapper {
   background: #010514 !important;
+
+  .project-wrapper-3 .project-box-items-3 li .content h3{
+    color: #fff;
+  }
 
   h1,h2,h3,h4,h5,h6 {
     color: #fff;
@@ -419,7 +423,7 @@
 
         &:hover {
             .icon {
-                background-color: #112d32;
+                background-color:var(--header);
             }
         }
     }
@@ -429,7 +433,7 @@
     }
 
     .service-section-3 .swiper-dot .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: #05A4BF;
+        background-color: var(--theme);
     }
 
     .choose-us-wrapper-3 .choose-us-content .choose-list li {

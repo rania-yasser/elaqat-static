@@ -110,7 +110,7 @@
 
         $(".count").counterUp({
             delay: 15,
-            time: 4000,
+            time: 2000,
         });
 
         /* ================================
@@ -193,10 +193,17 @@
         /* ================================
          Scrolldown Js Start
         ================================ */
-        $("#scrollDown").on("click", function () {
-            setTimeout(function () {
-                $("html, body").animate({ scrollTop: "+=1000px" }, "slow");
-            }, 1000);
+
+
+        $(".js-scroll-link").on("click", function (e) {
+            e.preventDefault();
+
+            var target = $(this).attr("href");
+            var extraOffset = -80;
+
+            $("html, body").animate({
+                scrollTop: $(target).offset().top + extraOffset
+            }, 100);
         });
 
         /* ================================
@@ -205,7 +212,7 @@
 
         if ($('.brand-slider').length > 0) {
             const brandSlider = new Swiper(".brand-slider", {
-                spaceBetween: 30,
+                spaceBetween: 10,
                 speed: 1300,
                 loop: true,
                 autoplay: {
@@ -218,22 +225,22 @@
                 },
                 breakpoints: {
                     1399: {
-                        slidesPerView: 6,
+                        slidesPerView: 9,
                     },
                     1199: {
-                        slidesPerView: 5.5,
+                        slidesPerView: 8,
                     },
                     991: {
-                        slidesPerView: 4.5,
+                        slidesPerView: 7,
                     },
                     767: {
-                        slidesPerView: 3.3,
+                        slidesPerView: 5,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                     },
                     0: {
-                        slidesPerView: 1.6,
+                        slidesPerView: 3,
                     },
                 },
             });

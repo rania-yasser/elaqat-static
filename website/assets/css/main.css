@@ -7,7 +7,7 @@
   --white: #fff;
   --theme: #28327f;
   --theme2: #EC4899;
-  --theme3: #05A4BF;
+  --theme3: #28327f;
   --theme4: #F72;
   --theme5: #F6D258;
   --theme6: #A9E1FF;
@@ -154,19 +154,19 @@ h2 {
 
 @media (max-width: 767px) {
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 575px) {
   h2 {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 470px) {
   h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
@@ -2137,7 +2137,7 @@ span {
 }
 
 .header-1 .mean__menu-wrapper .main-menu ul li a:hover {
-  color: var(--theme) !important;
+  color: #777 !important;
 }
 
 .header-1 .mean__menu-wrapper .main-menu ul li .submenu {
@@ -3321,14 +3321,11 @@ span {
 
 .footer-area {
   background-color: var(--bg2);
-  margin: 0 30px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  margin: 0;
 }
 
 @media (max-width: 1399px) {
   .footer-area {
-    margin: 0 15px;
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
@@ -3477,7 +3474,7 @@ span {
 }
 
 .footer-area.footer-area-3 .footer-widget-wrapper .footer-widget-items .gt-list-area li:hover a {
-  color: var(--theme3);
+  color: #777;
 }
 
 .footer-area.footer-area-3 .footer-widget-wrapper .footer-widget-items .footer-form-3 h3 {
@@ -3760,16 +3757,16 @@ span {
 }
 
 .footer-section {
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .footer-widget-wrapper {
-  padding: 70px 0 100px;
+  padding: 70px 0;
 }
 
 @media (max-width: 991px) {
   .footer-widget-wrapper {
-    padding: 50px 0 80px;
+    padding: 50px 0;
   }
 }
 
@@ -3788,7 +3785,7 @@ span {
 }
 
 .footer-widget-wrapper .footer-widget-items .footer-content {
-  max-width: 310px;
+  max-width: 400px;
 }
 
 .footer-widget-wrapper .footer-widget-items .footer-content p {
@@ -3852,7 +3849,7 @@ span {
 }
 
 .footer-widget-wrapper .footer-widget-items .gt-list-area li:hover a {
-  color: var(--theme);
+  color: #777;
 }
 
 .footer-widget-wrapper .footer-widget-items .contact-list li {
@@ -3869,7 +3866,7 @@ span {
 }
 
 .footer-widget-wrapper .footer-widget-items .contact-list li:hover {
-  color: var(--theme);
+  color: #777;
 }
 
 .footer-widget-wrapper .footer-widget-items .contact-list li a {
@@ -3877,7 +3874,7 @@ span {
 }
 
 .footer-widget-wrapper .footer-widget-items .contact-list li a:hover {
-  color: var(--theme);
+  color: #777;
 }
 
 .footer-widget-wrapper.style-2 .footer-widget-items .widget-head h3 {
@@ -6027,6 +6024,7 @@ span {
 .about-wrapper .about-content .about-conter-items .counter-box h6 {
   font-size: 16px;
   font-weight: 600;
+  color: var(--theme);
 }
 
 .about-wrapper .about-content .about-conter-items .counter-box h2 {
@@ -7753,6 +7751,9 @@ span {
   border-radius: 6px;
   background-color: var(--white);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-card-item .content {
@@ -7787,12 +7788,22 @@ span {
   transform: scale(1, 1);
 }
 
-.service-card-item.active .icon img {
+.service-card-item .icon i {
+  color: var(--theme);
+  font-size: 33px;
+}
+
+.service-card-item.active .icon img,
+.service-card-item.active .icon i {
   -webkit-animation: gelatine 0.6s;
   animation: gelatine 0.6s;
 }
 
-.service-card-item.active .content h3 {
+.service-card-item.active .content h4 {
+  color: var(--white);
+}
+
+.service-card-item.active .content h2 {
   color: var(--white);
 }
 
@@ -7970,8 +7981,8 @@ span {
 }
 
 .service-section-3 {
-  margin: 0 30px;
-  border-radius: 16px;
+  margin: 0;
+  border-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   position: relative;
@@ -7980,7 +7991,6 @@ span {
 
 @media (max-width: 1399px) {
   .service-section-3 {
-    margin: 0 15px;
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
@@ -8093,11 +8103,16 @@ span {
   color: var(--header3);
   opacity: 0.8;
   line-height: 155.556%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .service-box-style-3 .content .link-btn {
-  color: var(--header3);
-  margin-top: 20px;
+  color: var(--theme);
+  margin-top: 30px;
 }
 
 .service-box-style-3 .content .link-btn i {
@@ -8678,13 +8693,12 @@ span {
 }
 
 .project-section {
-  margin: 0 30px;
-  border-radius: 16px;
+  margin: 0 ;
+  border-radius: 0;
 }
 
 @media (max-width: 1399px) {
   .project-section {
-    margin: 0 15px;
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
@@ -8730,14 +8744,17 @@ span {
 @media (max-width: 1199px) {
   .marquee.style-2 .text {
     gap: 30px;
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
 @media (max-width: 575px) {
   .marquee.style-2 .text {
     gap: 20px;
-    font-size: 50px;
+    font-size: 30px;
+  }
+  .marquee.style-2 .text img{
+    width: 20px;
   }
 }
 
@@ -8888,7 +8905,7 @@ span {
 
 @media (max-width: 767px) {
   .project-box-items .content h3 {
-    font-size: 36px;
+    font-size: 29px;
     letter-spacing: initial;
     text-transform: capitalize;
   }
@@ -8896,7 +8913,7 @@ span {
 
 @media (max-width: 575px) {
   .project-box-items .content h3 {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
@@ -8982,16 +8999,15 @@ span {
 }
 
 .marquee-section2.style-marque-3 .marquee {
-  margin: 0 30px;
+  margin: 0;
   background-color: var(--theme);
-  border-radius: 16px;
+  border-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 @media (max-width: 1399px) {
   .marquee-section2.style-marque-3 .marquee {
-    margin: 0 15px;
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
@@ -9216,8 +9232,8 @@ span {
 }
 
 .project-section-3 {
-  margin: 0 30px;
-  border-radius: 16px;
+  margin: 0 0;
+  border-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   position: relative;
@@ -9302,6 +9318,7 @@ span {
   .project-wrapper-3 .project-box-items-3 li .thumb {
     max-width: initial;
     margin-bottom: 15px;
+    width: 100%;
   }
 }
 
@@ -9355,13 +9372,13 @@ span {
 
 @media (max-width: 1399px) {
   .project-wrapper-3 .project-box-items-3 li .content h3 {
-    font-size: 26px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 1199px) {
   .project-wrapper-3 .project-box-items-3 li .content h3 {
-    font-size: 24px;
+    font-size: 14px;
   }
 }
 
@@ -12972,7 +12989,7 @@ span {
 }
 
 .brand-box-1 {
-  height: 125px;
+  height: 100px;
   line-height: 125px;
   border: 1px solid #E6E8EB;
   text-align: center;
@@ -13033,8 +13050,11 @@ span {
 }
 
 .brand-box-1 .brand-img-1 img {
-  opacity: 0.4;
-  transition: all 0.6s ease;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  transition: all 0.5s ease;
   transform: translateY(0);
 }
 
@@ -13552,7 +13572,7 @@ span {
 .cta-newsletter-section {
   position: relative;
   border-radius: 16px 16px 0 0;
-  margin: 0 30px;
+  margin: 0;
   padding: 80px 0;
 }
 
