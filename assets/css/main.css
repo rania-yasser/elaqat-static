@@ -8693,7 +8693,7 @@ span {
 }
 
 .project-section {
-  margin: 0 ;
+  margin: 0;
   border-radius: 0;
 }
 
@@ -8753,7 +8753,8 @@ span {
     gap: 20px;
     font-size: 30px;
   }
-  .marquee.style-2 .text img{
+
+  .marquee.style-2 .text img {
     width: 20px;
   }
 }
@@ -11284,6 +11285,7 @@ span {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  height: 350px;
 }
 
 .team-box-item-3 .thumb img {
@@ -11321,6 +11323,9 @@ span {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
 }
 
 .team-box-item-3 .thumb .social-icon a {
@@ -11340,7 +11345,8 @@ span {
 }
 
 .team-box-item-3 .content {
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -11400,7 +11406,15 @@ span {
 }
 
 .team-box-item-3.style-2 .content h3 {
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--theme);
+}
+
+.team-box-item-3.style-2 .content p {
+  font-size: 14px;
+  line-height: normal;
+  margin-top: 8px;
 }
 
 .team-box-item-3.style-2 .content h3 a {
@@ -11429,6 +11443,12 @@ span {
   opacity: 1;
   visibility: visible;
   transform: translateY(-50%) scale(1);
+  background-color: #28327fde;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
 }
 
 .team-section-3 {
