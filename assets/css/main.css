@@ -8070,6 +8070,14 @@ span {
   border-radius: 50%;
   background-color: var(--theme);
   transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box-style-3 .icon i {
+  font-size: 30px;
+  color: #fff;
 }
 
 .service-slider-3 .swiper-slide {
@@ -8154,7 +8162,7 @@ span {
   animation: gelatine 0.6s;
 }
 
-.service-box-style-3:hover .content h3 a {
+.service-box-style-3:hover .content h3 {
   color: var(--white);
 }
 
