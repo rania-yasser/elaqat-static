@@ -20,6 +20,9 @@
 }
 .dark-body .page-wrapper {
   background: #010514 !important;
+  .team-box-item-3.style-2 .content h3{
+    color: white;
+  }
 
   .project-wrapper-3 .project-box-items-3 li .content h3{
     color: #fff;
@@ -40,11 +43,6 @@
 
   .brand-box-1 {
     border: 1px solid rgb(255 255 255 / 16%);
-
-    img {
-        filter: brightness(0) invert(1);
-    }
-
   }
 
   .section-bg {
@@ -52,7 +50,7 @@
     }
 
   .service-card-item {
-       background: #0F172A;
+       background: #182646;
     }
 
     .array-button .array-prev, .array-button .array-next {
@@ -61,7 +59,7 @@
     }
 
     .feature-box-items {
-         background: #0F172A;
+         background: #182646;
 
          h3 {
             a {
