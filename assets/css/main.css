@@ -13019,7 +13019,6 @@ span {
 .brand-box-1 {
   height: 100px;
   line-height: 125px;
-  border: 1px solid #E6E8EB;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -14716,4 +14715,10 @@ span {
   opacity: .5;
 }
 
-/*# sourceMappingURL=main.css.map */
+
+
+
+/* Container & Section Styling */
+.projects-section {
+    padding: 60px 0;
+}

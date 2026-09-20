@@ -265,7 +265,7 @@
                 speed: 1300,
                 loop: false,
                 grid: {
-                    rows: 2,
+                    rows: 3,
                     fill: "row",
                 },
                 autoplay: {
@@ -279,27 +279,65 @@
                 breakpoints: {
                     1399: {
                         slidesPerView: 8,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
                     },
                     1199: {
                         slidesPerView: 8,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
                     },
                     991: {
                         slidesPerView: 7,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
                     },
                     767: {
                         slidesPerView: 5,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
                     },
                     575: {
                         slidesPerView: 3,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
                     },
                     0: {
                         slidesPerView: 2,
-                        grid: { rows: 2 },
+                        grid: { rows: 3 },
+                    },
+                },
+            });
+        }
+
+        /* ================================
+            projects-slider
+        ================================ */
+        if ($('.projects-slider').length > 0) {
+            const projectsSlider = new Swiper(".projects-slider", {
+                spaceBetween: 25,
+                speed: 1000,
+                loop: true,
+                 autoplay: {
+                    delay: 2000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".array-next",
+                    prevEl: ".array-prev",
+                },
+                pagination: {
+                    el: ".dot",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                    },
+                    0: {
+                        slidesPerView: 1,
                     },
                 },
             });
