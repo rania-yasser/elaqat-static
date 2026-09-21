@@ -1,0 +1,87 @@
+:root {
+  --theme: #008a4a !important;
+  --theme3: #008a4a !important;
+  --header: #00343a !important;
+  --bg2: #00343a !important;
+}
+
+.hero-1::after {
+  background: linear-gradient(180deg, var(--header) 3%, #28327f00 50%) !important;
+}
+
+.hero-1 {
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 650px !important;
+}
+
+.team-box-item-3:hover .thumb .social-icon {
+  background-color: #00343ad6 !important;
+}
+
+.section-title .sub-title img {
+  filter: hue-rotate(260deg) !important;
+}
+
+.breadcrumb-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.breadcrumb-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--header) 2%, #28327f00 70%) !important;
+}
+
+@media(max-width:992px) {
+  .hero-1 {
+    min-height: 450px !important;
+  }
+}
+
+@media(max-width:768px) {
+  .hero-1 {
+    min-height: 250px !important;
+  }
+}
+
+@media(max-width:500px) {
+  .hero-1 {
+    min-height: 170px !important;
+    padding-top: 110px !important;
+  }
+}
+.df-container{
+  background-color: transparent !important;
+}
+
+.dark-body {
+  background: var(--bg2) !important;
+}
+
+.dark-body .page-wrapper {
+  .section-bg {
+    background: var(--bg2) !important;
+  }
+
+  .service-card-item {
+    background: #002e33 !important;
+  }
+  .service-box-style-3{
+    background: #002e33 !important;
+  }
+  .project-wrapper-3 .project-box-items-3 li{
+    background: #002e33 !important;
+  }
+}
+.footer-area {
+background-color: #002e33 !important;
+}
